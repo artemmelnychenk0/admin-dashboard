@@ -1,0 +1,251 @@
+html {
+    height: 100%;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "sidebar main";
+
+}
+
+/* Sidebar properties */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #0ea5e9;
+
+}
+
+.sidebar p {
+    font-size: 25px;
+    padding-left: 10px;
+    color: aliceblue;
+}
+
+.sidebar svg {
+    vertical-align: bottom;
+    padding-right: 15px;
+    color: aliceblue;
+
+}
+
+svg.dash {
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+ul {
+    font-size: 17px;
+    display: grid;
+    list-style-type: none;
+    margin-top: 50px;
+    row-gap: 15px;
+}
+
+li {
+    justify-items: center;
+    color: aliceblue;
+
+}
+
+.main {
+    grid-area: main;
+}
+
+/* Header properties */
+.header {
+    padding: 15px 25px 15px 25px;
+    margin-bottom: 3px;
+    box-shadow: 0px 0px 10px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 5% 4fr 1fr 5% 1fr 2fr;
+    grid-template-areas:
+        "icon1 search . icon2 smallImg adminName";
+    align-items: center;
+}
+
+svg.search {
+    grid-area: icon1;
+    padding-right: 0px;
+}
+
+svg.bell {
+    grid-area: icon2;
+}
+
+form input {
+    width: 500px;
+    border-radius: 15px;
+    background-color: #fde68a;
+}
+
+.search {
+    grid-area: search;
+}
+
+.smallImg {
+    grid-area: smallImg;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.adminName {
+    grid-area: adminName;
+    font-size: 20px;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 15% 3fr 2fr;
+    grid-template-areas:
+        "bigImg greeting buttons";
+    align-items: center;
+}
+
+.bigImg {
+    grid-area: bigImg;
+    border-radius: 50%;
+    height: 100px;
+}
+
+.greeting {
+    grid-area: greeting;
+
+}
+
+.bigFont {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.greeting p {
+    margin: 0;
+}
+
+.buttons {
+    grid-area: buttons;
+    display: inline-block;
+}
+
+button {
+    border-radius: 25px;
+    width: 100px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+/* Main content */
+.middle {
+    display: grid;
+    grid-template-columns: 3fr 30%;
+    grid-template-areas: "left right";
+    padding: 20px;
+    background-color: #fde68a;
+
+}
+
+.left {
+    grid-area: left;
+    padding: 10px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "one two"
+        "one two"
+        "one two";
+    gap: 25px;
+}
+
+.card {
+    padding: 10px 10px 25px 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.right {
+    padding: 10px;
+    grid-area: right;
+}
+
+
+.trending {
+    padding: 20px 10px 20px 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "pic1 name1"
+        "pic2 name2";
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.img1 {
+    grid-area: pic1;
+}
+
+.name1 {
+    grid-area: name1;
+}
+
+
+.trend img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.announcements {
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px;
+}
+
+
+.announc p {
+    font-size: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    padding: 5px 5px 10px 5px;
+}
+
+.announc1 p {
+    font-size: 10px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.trending p {
+    margin: 0;
+}
